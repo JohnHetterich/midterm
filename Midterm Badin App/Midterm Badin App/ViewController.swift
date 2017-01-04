@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var homeToEventsButton: UIButton!
     @IBOutlet weak var tapMeCounterLabel: UILabel!
@@ -39,15 +39,33 @@ class ViewController: UIViewController {
    var classesList = ["Math", "English", "Science"]
     
     
+    //This is an array
+    var schoolInfo = ["Location: 571 New London Rd", "Phone: (513)555-5555", "Principal: Brian Pendergest"]
+    
+    
+    @IBOutlet weak var infoTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
+        
+        infoTableView.dataSource = self //defines the table
+        infoTableView.delegate = self //defines content
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //number of rows
+        return schoolInfo.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //what to do in the cells
+        let cell = UITableViewCell()
+        cell.textLabel?.text = schoolInfo[indexPath.row]
+        return cell
     }
 }
