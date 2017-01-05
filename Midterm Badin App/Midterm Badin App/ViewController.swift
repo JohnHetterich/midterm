@@ -35,8 +35,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
 
     }
-    //This is an array
-   var classesList = ["Math", "English", "Science"]
+    
     
     
     //This is an array

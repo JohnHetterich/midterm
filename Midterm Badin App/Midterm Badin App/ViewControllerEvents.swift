@@ -12,7 +12,6 @@ import UIKit
 
 class ViewControllerEvents: UIViewController {
 
-    @IBOutlet weak var eventsTableView: UITableView!
 
 
 }
