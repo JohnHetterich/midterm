@@ -19,18 +19,10 @@
                         <viewControllerLayoutGuide type="top" id="kNH-Gc-e8h"/>
                         <viewControllerLayoutGuide type="bottom" id="bce-1L-jEf"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2PP-FA-dib" customClass="ViewControllerEvents">
+                    <view key="view" contentMode="scaleToFill" id="2PP-FA-dib">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4E-6h-TMt">
-                                <rect key="frame" x="164" y="570" width="46" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="Nnv-77-xOl" kind="push" id="6cs-IJ-zic"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="O3o-IJ-3kc">
                                 <rect key="frame" x="16" y="83" width="585" height="268"/>
                                 <subviews>
@@ -131,25 +123,6 @@
             </objects>
             <point key="canvasLocation" x="-476" y="160.56971514242881"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="xOt-db-cG7">
-            <objects>
-                <viewController id="Nnv-77-xOl" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="DdC-xm-e3C"/>
-                        <viewControllerLayoutGuide type="bottom" id="g6K-bt-aNw"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mXI-hK-vcY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="8a0-0D-7kr"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L0B-Qz-W2K" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-476" y="965"/>
-        </scene>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -172,6 +145,7 @@
                                             <color key="titleColor" red="0.15294117647058825" green="0.35294117647058826" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="eventsNav:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QCY-ez-YA5"/>
                                             <segue destination="5gi-Nm-WHl" kind="push" identifier="" id="FKI-JM-FkV"/>
                                         </connections>
                                     </button>
@@ -182,6 +156,7 @@
                                             <color key="titleColor" red="0.15294117647058825" green="0.35294117647058826" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="announcementsNav:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ghc-kr-XqB"/>
                                             <segue destination="lpL-7G-hed" kind="push" identifier="fromHomeToAnnouncements" id="EOt-Y4-ZVf"/>
                                         </connections>
                                     </button>
@@ -192,6 +167,7 @@
                                             <color key="titleColor" red="0.15294117647058825" green="0.35294117647058826" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="classesNav:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0GA-sH-aJp"/>
                                             <segue destination="Xqq-en-Bfk" kind="push" identifier="fromHomeToClasses" id="qBb-I1-vLa"/>
                                         </connections>
                                     </button>
@@ -202,6 +178,7 @@
                                             <color key="titleColor" red="0.15294117647058825" green="0.35294117647058826" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="newsNav:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kQe-HF-NRo"/>
                                             <segue destination="cHN-K3-htd" kind="push" identifier="fromHomeToNews" id="Pcm-nA-ZHh"/>
                                         </connections>
                                     </button>

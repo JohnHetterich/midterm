@@ -36,6 +36,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     }
     
+    //Print out in console when a navigation button is clicked
+    @IBAction func eventsNav(_ sender: Any) {
+        print("Going to the Events screen!")
+    }
+    @IBAction func announcementsNav(_ sender: Any) {
+        print("Going to the Announcements screen!")
+    }
+    @IBAction func classesNav(_ sender: Any) {
+        print("Going to the Classes screen!")
+    }
+    @IBAction func newsNav(_ sender: Any) {
+        print("Going to the News screen!")
+    }
     
     
     //This is an array
