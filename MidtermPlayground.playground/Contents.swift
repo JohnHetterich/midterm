@@ -2,15 +2,15 @@
 
 import UIKit
 
-var str = "Hello, playground"
-
-var name = "Class"
+// conditional
+var name = " "
 if name == "John" {
     print("You're pretty cool")
 } else {
     print("Sorry for your loss")
 }
 
+// math function
 func addTwo (num1 : Int, num2 : Int) {
     print(num1 + num2)
 }
@@ -18,14 +18,13 @@ func addTwo (num1 : Int, num2 : Int) {
 addTwo(num1: 5, num2: 10)
 addTwo(num1: 8, num2: 2)
 
+// class declaration
 class SchoolClass {
     var name = " "
     var period = 0
     var level = " "
     
 }
-
-
 
 var SchoolClass1 = SchoolClass()
 SchoolClass1.name = "Math"
